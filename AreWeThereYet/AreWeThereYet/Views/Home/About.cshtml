@@ -5,3 +5,75 @@
 <h3>@ViewBag.Message</h3>
 
 <p>Use this area to provide additional information.</p>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+ 
+<div id="map" style="height: 500px"></div>
+
+<script>
+    
+var map;
+//var ajaxRequest;
+//var plotlist;
+//var plotlayers = [];
+    
+
+   //map = new L.Map('map');
+    map = new L.map('map').setView([64.70, -18.00], 5.6);
+    //Stamen_Watercolor = new L.map('map').setView([64.70, -18.00], 5.6);
+   //var maxBounds = L.latLngBounds(
+   //L.latLng(65.00, -18.00), //Southwest
+   //L.latLng(61, -15.000)  //Northeast
+
+    // REQUIRED: create the tile layer with correct attribution
+   // var osmUrl = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png';
+    //var osmAttrib = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+    //var osm = new L.TileLayer(osmUrl, { minZoom: 8, maxZoom: 20, attribution: osmAttrib });
+
+    // Set default center (Hartford, CT in this case - with a zoom level of 17)
+    //map.setView(new L.LatLng(41.7656874, -72.680087), 17);
+    // map.addLayer(osm);
+
+    L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        subdomains: 'abcd',
+        minZoom: 6,
+        maxZoom: 10,
+        ext: 'png'
+    }).addTo(map);
+
+    var southWest = L.latLng(58.712, -18.227),
+    northEast = L.latLng(60.774, 20.125),
+    bounds = L.latLngBounds(southWest, northEast).addTo(map);
+    setMaxBounds = L.latLngBounds(southWest, northEast);
+    fitBounds(L.latLngBounds(southWest, northEast));
+    
+    //latLngBounds(southWest, northEast);
+
+   //L.tileLayer ('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+   //attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+   //}).addTo(map);
+
+    //var Stamen_Watercolor =
+      
+
+
+    //var maxBounds = L.latLngBounds(
+    //L.latLng(65.00, -18.00), //Southwest
+    //L.latLng(61, -15.000)  //Northeast
+    //);
+    L.control.scale().addTo(map);
+
+    L.marker([64.60, -18.00]).addTo(map)
+    .bindPopup('AreWeThereYet.<br>')
+    .openPopup();
+</script>
+
+
+
+
+
+
+
+
+
