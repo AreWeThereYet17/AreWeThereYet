@@ -1,14 +1,8 @@
 language: csharp
 solution: ./src/AreWeThereYet.sln
+dist: trusty
 sudo: required
-
-install:
-  - sudo apt-get install nunit-console
-  - nuget restore ./src/AreWeThereYet.sln
-
-script:
-  - xbuild ./src/arewethereyet.sln
-  
+mono: none
+dotnet: 1.0.0-preview2-003121
 script:
   - ./build.sh --quiet verify
-
