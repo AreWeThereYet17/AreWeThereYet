@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-dotnet restore && dotnet build **/project.json
+set -ev
+dotnet restore
+dotnet test
+dotnet build -c Release
