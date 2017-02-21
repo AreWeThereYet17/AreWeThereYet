@@ -1,2 +1,5 @@
 language: csharp
-solution: ./AreWeThereYet.sln
+solution: src/AreWeThereYet.sln
+install:
+  - nuget restore src/AreWeThereYet.sln -Verbosity detailed
+  - nuget update src/AreWeThereYet.sln -Verbosity detailed
