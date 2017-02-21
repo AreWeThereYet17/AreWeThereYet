@@ -80,3 +80,9 @@ C:\Users\noi12\Source\Repos\AreWeThereYet\AreWeThereYet\AreWeThereYet\bin\Micros
 C:\Users\noi12\Source\Repos\AreWeThereYet\AreWeThereYet\AreWeThereYet\obj\Debug\AreWeThereYet.csprojResolveAssemblyReference.cache
 C:\Users\noi12\Source\Repos\AreWeThereYet\AreWeThereYet\AreWeThereYet\obj\Debug\AreWeThereYet.dll
 C:\Users\noi12\Source\Repos\AreWeThereYet\AreWeThereYet\AreWeThereYet\obj\Debug\AreWeThereYet.pdb
+C:\Users\noi12\Source\Repos\AreWeThereYet\AreWeThereYet\AreWeThereYet\bin\Microsoft.Web.XmlTransform.dll
+C:\Users\noi12\Source\Repos\AreWeThereYet\AreWeThereYet\AreWeThereYet\bin\NuGet.Common.dll
+C:\Users\noi12\Source\Repos\AreWeThereYet\AreWeThereYet\AreWeThereYet\bin\NuGet.Configuration.dll
+C:\Users\noi12\Source\Repos\AreWeThereYet\AreWeThereYet\AreWeThereYet\bin\NuGet.Core.dll
+C:\Users\noi12\Source\Repos\AreWeThereYet\AreWeThereYet\AreWeThereYet\bin\NuGet.Common.xml
+C:\Users\noi12\Source\Repos\AreWeThereYet\AreWeThereYet\AreWeThereYet\bin\NuGet.Configuration.xml
