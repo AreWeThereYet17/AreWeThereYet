@@ -1,5 +1,6 @@
 language: csharp
 solution: ./src/AreWeThereYet.sln
+sudo: required
 
 install:
   - sudo apt-get install nunit-console
