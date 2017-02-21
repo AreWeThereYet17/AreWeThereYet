@@ -8,5 +8,7 @@ install:
 
 script:
   - xbuild ./src/arewethereyet.sln
-  - nunit-console ./src/SomeLibrary.Tests/bin/Debug/SomeLibrary.Tests.dll
+  
+script:
+  - ./build.sh --quiet verify
 
