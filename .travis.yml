@@ -2,4 +2,4 @@ language: csharp
 solution: src/AreWeThereYet.sln
 install:
   - sudo apt-get install -y gtk-sharp2
-  - nuget restore <AreWeThereYet.sln>
+  - nuget restore AreWeThereYet.sln
