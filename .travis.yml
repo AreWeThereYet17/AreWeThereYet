@@ -3,9 +3,9 @@ solution: ./src/yoursolution.sln
 
 install:
   - sudo apt-get install nunit-console
-  - nuget restore ./src/yoursolution.sln
+  - nuget restore ./src/arewethereyet.sln
 
 script:
-  - xbuild ./src/yoursolution.sln
+  - xbuild ./src/arewethereyet.sln
   - nunit-console ./src/SomeLibrary.Tests/bin/Debug/SomeLibrary.Tests.dll
 
