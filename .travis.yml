@@ -1,9 +1,11 @@
 language: csharp
-solution: AreWeThereYet.sln
-before_install:
+solution: ./src/yoursolution.sln
+
+install:
   - sudo apt-get install nunit-console
-before_script:
-  - nuget restore AreWeThereYet.sln
-after_script:
-  - nunit-console Tests/bin/Release/Tests.dll
+  - nuget restore ./src/yoursolution.sln
+
+script:
+  - xbuild ./src/yoursolution.sln
+  - nunit-console ./src/SomeLibrary.Tests/bin/Debug/SomeLibrary.Tests.dll
 
