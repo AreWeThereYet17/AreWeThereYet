@@ -1,2 +1,2 @@
 ﻿language: csharp
-solution: AreWeThereYet.sln
+solution: ./AreWeThereYet.sln
