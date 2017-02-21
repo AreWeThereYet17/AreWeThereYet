@@ -1,9 +1,9 @@
 language: csharp
-solution: ./src/yoursolution.sln
+solution: ./src/AreWeThereYet.sln
 
 install:
   - sudo apt-get install nunit-console
-  - nuget restore ./src/arewethereyet.sln
+  - nuget restore ./src/AreWeThereYet.sln
 
 script:
   - xbuild ./src/arewethereyet.sln
