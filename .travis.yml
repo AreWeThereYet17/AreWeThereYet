@@ -1,10 +1,2 @@
 language: csharp
 solution: AreWeThereYet.sln
-install:
-  - nuget restore AreWeThereYet.sln
-  - nuget install xunit.runner.console -Version 2.1.0 -OutputDirectory testrunner
-script:
-  - xbuild /p:Configuration=Release AreWeThereYet.sln
-  - mono ./testrunner/xunit.runner.console.2.1.0/tools/xunit.console.exe ./csharp-extensions-test/bin/Release/AreWeThereYet-tests.dll
-notifications:
-  email: false
