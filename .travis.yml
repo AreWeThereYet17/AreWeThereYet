@@ -1,12 +1,10 @@
 language: csharp
-solution: ./src/AreWeThereYet/AreWeThereYet/AreWeThereYet.sln
-dist: trusty
-sudo: required
-mono: none
-dotnet: 1.0.0-preview2-003131
+solution: AreWeThereYet.sln
 install:
-  - export DOTNET_CLI_TELEMETRY_OPTOUT=1
-before_script:
-- chmod a+x ./Build.sh
+  - nuget restore AreWeThereYet.sln
+  - nuget install xunit.runner.console -Version 2.1.0 -OutputDirectory testrunner
 script:
-- ./Build.sh
+  - xbuild /p:Configuration=Release AreWeThereYet.sln
+  - mono ./testrunner/xunit.runner.console.2.1.0/tools/xunit.console.exe ./csharp-extensions-test/bin/Release/AreWeThereYet-tests.dll
+notifications:
+  email: false
