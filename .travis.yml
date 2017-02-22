@@ -1,2 +1,6 @@
 language: csharp
-solution: AreWeThereYet.sln
+install:
+  - sudo apt-get update && sudo apt-get install mono-devel mono-gmcs nunit-console
+script:
+  - xbuild AreWeThereYet/AreWeThereYet.sln
+  
