@@ -1,5 +1,5 @@
 language: csharp
-solution: ./src/AreWeThereYet/AreWeThereYet.sln
+solution: ./src/AreWeThereYet/AreWeThereYet/AreWeThereYet.sln
 dist: trusty
 sudo: required
 mono: none
